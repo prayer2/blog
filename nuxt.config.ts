@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/content', '@nuxtjs/color-mode', '@nuxtjs/sitemap'],
   site: {
-    url: 'https://my-ai-blog.example.com', // 这是 sitemap 生成所依赖的正式网址，你后续可以修改它
+    url: 'https://jianghuayan.me', // 正式绑定的域名，用于自动生成正确的 SEO Sitemap
   },
   colorMode: {
     classSuffix: '', // Tailwind 需要的是 .dark，而默认是 .dark-mode，所以把后缀去掉
