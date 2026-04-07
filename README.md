@@ -33,13 +33,13 @@
 * [x] 借助 `@nuxtjs/color-mode` 实现浅色/深色模式切换。
 
 ### 第四阶段：功能进阶与 SEO
-* [ ] 优化 SEO Meta 标签。
-* [ ] 修改 Nuxt 配置生成 Sitemap 和 RSS。
-* [ ] 封装并植入 Giscus 评论组件。
+* [x] 优化 SEO Meta 标签。
+* [x] 修改 Nuxt 配置生成 Sitemap 和 RSS。
+* [x] 封装并植入 Giscus 评论组件。
 
 ### 第五阶段：部署与后续维护流
-* [ ] 推送代码至 GitHub，并在 Vercel 上一键部署。
-* [ ] 建立 AI 写文的 Markdown 模板规范。
+* [x] 推送代码至 GitHub，并在 Vercel 上一键部署。
+* [x] 建立 AI 写文的 Markdown 模板规范。
 
 
 # pnpm
