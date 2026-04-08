@@ -1,7 +1,16 @@
 <template>
   <div class="min-h-screen bg-slate-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 flex flex-col transition-colors duration-300 relative overflow-hidden">
     
-    <!-- 装饰性背景光晕，放在固定底层 (确保 z-index 为 0 起步，且不会被父级背景色遮挡) -->
+    <!-- 全局图片背景，处于最底层 -->
+    <div class="fixed inset-0 z-0">
+      <NuxtImg 
+        src="/blog/bg.jpeg" 
+        alt="网站背景" 
+        class="w-full h-full object-cover opacity-20 dark:opacity-10 transition-opacity duration-500" 
+      />
+    </div>
+
+    <!-- 装饰性背景光晕，放在背景图之上，正文内容之下 -->
     <div class="fixed inset-0 z-0 pointer-events-none flex justify-center items-center overflow-hidden">
       <!-- 左上角巨大的动态蓝色光晕 -->
       <div class="absolute -top-[10%] -left-[10%] w-[60vw] h-[60vw] rounded-full bg-blue-400/20 dark:bg-blue-700/20 blur-[120px] mix-blend-multiply dark:mix-blend-screen animate-pulse duration-[10000ms]"></div>

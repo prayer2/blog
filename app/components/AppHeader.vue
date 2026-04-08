@@ -2,11 +2,13 @@
   <header class="sticky top-0 z-50 w-full backdrop-blur-md bg-white/40 dark:bg-gray-900/40 border-b border-gray-200/30 dark:border-gray-800/30 transition-colors duration-300 shadow-sm">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <!-- Logo -->
-      <NuxtLink to="/" class="flex items-center space-x-2 group">
-        <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold group-hover:bg-blue-500 transition-colors">
-          AI
-        </div>
-        <span class="text-xl font-bold text-gray-900 dark:text-white tracking-tight">我的博客</span>
+      <NuxtLink to="/" class="flex items-center space-x-3 group">
+        <NuxtImg 
+          src="/blog/avatar.jpg" 
+          alt="Mint的主理人头像" 
+          class="w-9 h-9 rounded-full object-cover shadow-sm group-hover:scale-105 transition-transform duration-300"
+        />
+        <span class="text-xl font-bold text-gray-900 dark:text-white tracking-tight">Mint的博客</span>
       </NuxtLink>
 
       <!-- Navigation -->
