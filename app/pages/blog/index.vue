@@ -5,9 +5,10 @@
       <p class="text-gray-500 dark:text-gray-400">记录技术、生活与灵感</p>
     </div>
 
-    <!-- 获取并遍历所有 /blog 下的文章 -->
-    <ContentList path="/blog" v-slot="{ list }">
-      <div v-if="list.length > 0" class="space-y-6">
+    <!-- 获取并遍历所有 /blog 下的文章，并按日期倒序排序（越新越靠前） -->
+    <!-- 由于文件放在了子文件夹里，path="/blog" 依然有效（默认深层抓取），此处加入 sort 参数 -->
+    <ContentList path="/blog" :query="{ sort: [{ date: -1 }] }" v-slot="{ list }">
+      <div v-if="list?.length > 0" class="space-y-6">
         <article
           v-for="post in list"
           :key="post._path"
