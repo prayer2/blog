@@ -1,9 +1,10 @@
 <template>
-  <div class="min-h-[80vh] flex flex-col justify-center items-center py-10 px-4 sm:px-6 lg:px-8">
+  <!-- 取消绝对高度，通过减少间距使得完整页面在 1080p 等常规屏幕上直接满屏无滚动条 -->
+  <div class="flex flex-col justify-center items-center flex-grow py-4 px-4 sm:px-6 lg:px-8">
     
     <!-- Hero Section -->
-    <div class="text-center max-w-4xl mx-auto mb-16 space-y-8 mt-10">
-      <div class="inline-flex items-center rounded-full px-4 py-1.5 text-sm font-semibold tracking-wide text-blue-600 bg-blue-50 dark:bg-blue-900/30 dark:text-blue-400 mb-4 border border-blue-100 dark:border-blue-800">
+    <div class="text-center max-w-4xl mx-auto mb-12 space-y-6">
+      <div class="inline-flex items-center rounded-full px-4 py-1.5 text-sm font-semibold tracking-wide text-blue-600 bg-blue-50 dark:bg-blue-900/30 dark:text-blue-400 mb-2 border border-blue-100 dark:border-blue-800">
         <span class="flex h-2 w-2 rounded-full bg-blue-600 mr-2 animate-pulse"></span>
         Vue 3 + Nuxt 3 强力驱动
       </div>
@@ -41,7 +42,7 @@
     </div>
 
     <!-- Feature Grid -->
-    <div class="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto w-full mt-10">
+    <div class="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto w-full mt-4 pb-4">
       <div class="p-6 bg-white dark:bg-gray-800 rounded-3xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-shadow">
         <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 rounded-2xl flex items-center justify-center mb-4 text-2xl">⚡</div>
         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">极致极速体验</h3>
