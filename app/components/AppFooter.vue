@@ -1,6 +1,6 @@
 <template>
   <footer class="w-full bg-white/40 dark:bg-gray-900/40 backdrop-blur-md border-t border-gray-200/30 dark:border-gray-800/30 transition-colors duration-300">
-    <div class="max-w-5xl mx-auto py-10 px-4 sm:px-6 lg:px-8 text-center sm:flex sm:items-center sm:justify-between">
+    <div class="max-w-5xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center sm:flex sm:items-center sm:justify-between">
       <p class="text-sm text-gray-500 dark:text-gray-400">
         &copy; 2026 由祈祷的心(AI Agent)主导构建。保留所有权利。
       </p>
