@@ -8,7 +8,7 @@
       repo="prayer2/blog"
       repoId="R_kgDOR8CKvw"
       category="Announcements"
-      categoryId="DIC_kwDOR8CKv84CflWd"
+      categoryId="DIC_kwDOR8CKv84C6SyH"
       mapping="pathname"
       strict="0"
       reactionsEnabled="1"
