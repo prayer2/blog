@@ -2,20 +2,18 @@
   <div class="w-full max-w-4xl mx-auto">
     <ContentDoc v-slot="{ doc }">
       <article class="bg-white/60 dark:bg-gray-900/60 backdrop-blur-xl border border-gray-100 dark:border-gray-800 rounded-3xl shadow-sm overflow-hidden p-8 sm:p-12 mb-16 max-w-none">
-        <header class="mb-10 text-center">
+        <header class="mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-gray-100 dark:border-gray-800 pb-4 gap-4 sm:gap-0">
           <!-- 标签 -->
-          <div v-if="doc.tags?.length" class="flex justify-center gap-2 mb-4">
-            <span v-for="tag in doc.tags" :key="tag" class="px-2.5 py-1 bg-blue-100/50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 rounded-md text-xs font-semibold tracking-wide">
-              #{{ tag }}
-            </span>
+          <div class="flex flex-wrap gap-2">
+            <template v-if="doc.tags?.length">
+              <span v-for="tag in doc.tags" :key="tag" class="px-2.5 py-1 bg-blue-100/50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 rounded-md text-xs font-semibold tracking-wide">
+                #{{ tag }}
+              </span>
+            </template>
           </div>
 
-          <!-- 标题 -->
-          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight mb-4 leading-tight">
-            {{ doc.title }}
-          </h1>
-
-          <div class="flex items-center justify-center space-x-4 text-gray-500 dark:text-gray-400 text-sm font-medium pt-2">
+          <!-- 日期 -->
+          <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm font-medium">
              <span v-if="doc.date">📅 {{ new Date(doc.date).toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' }) }}</span>
           </div>
         </header>
