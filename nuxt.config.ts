@@ -12,8 +12,7 @@ export default defineNuxtConfig({
   image: {
     // 默认配置（未来你可以随时切换到 Aliyun OSS、Cloudflare R2 等 provider）
     quality: 80,
-    format: ['webp', 'avif', 'jpeg', 'png'],
-    dir: 'public/images' // 指定统一图片存放基础路径（相当于自动从 /public/images 开始找图）
+    format: ['webp', 'avif', 'jpeg', 'png']
   },
   site: {
     url: 'https://jianghuayan.me', // 正式绑定的域名，用于自动生成正确的 SEO Sitemap

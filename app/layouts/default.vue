@@ -4,7 +4,7 @@
     <!-- 全局图片背景，处于最底层 -->
     <div class="fixed inset-0 z-0">
       <NuxtImg 
-        src="/blog/bg.jpeg" 
+        src="/images/blog/bg.jpeg" 
         alt="网站背景" 
         class="w-full h-full object-cover opacity-20 dark:opacity-10 transition-opacity duration-500" 
       />

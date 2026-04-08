@@ -4,7 +4,7 @@
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center space-x-3 group">
         <NuxtImg 
-          src="/blog/avatar.jpg" 
+          src="/images/blog/avatar.jpg" 
           alt="Mint的主理人头像" 
           class="w-9 h-9 rounded-full object-cover shadow-sm group-hover:scale-105 transition-transform duration-300"
         />
