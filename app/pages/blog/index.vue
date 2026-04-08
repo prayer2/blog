@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-3xl mx-auto py-8">
+  <div class="max-w-3xl mx-auto">
     <div class="mb-10 text-center">
       <h1 class="text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight mb-2">博客文章列表</h1>
       <p class="text-gray-500 dark:text-gray-400">记录技术、生活与灵感</p>

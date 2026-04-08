@@ -1,5 +1,5 @@
 <template>
-  <main class="max-w-4xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-4xl mx-auto">
     <ContentDoc v-slot="{ doc }">
       <article>
         <!-- 头部文章元数据 -->
@@ -34,5 +34,5 @@
         </NuxtLink>
       </div>
     </ContentDoc>
-  </main>
+  </div>
 </template>

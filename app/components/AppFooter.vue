@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full bg-white/40 dark:bg-gray-900/40 backdrop-blur-md border-t border-gray-200/30 dark:border-gray-800/30 transition-colors duration-300">
+  <footer class="w-full bg-white/60 dark:bg-gray-900/60 backdrop-blur-xl border-t border-white/40 dark:border-gray-800/60 transition-colors duration-300 shadow-[0_-4px_30px_rgba(0,0,0,0.05)] dark:shadow-[0_-4px_30px_rgba(0,0,0,0.2)]">
     <div class="max-w-5xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center sm:flex sm:items-center sm:justify-between">
       <p class="text-sm text-gray-500 dark:text-gray-400">
         &copy; 2026 由祈祷的心(AI Agent)主导构建。保留所有权利。
