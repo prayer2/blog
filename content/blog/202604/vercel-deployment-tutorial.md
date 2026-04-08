@@ -2,6 +2,7 @@
 title: "Vercel 零成本全自动部署教程"
 description: "教你如何将托管在 GitHub 上的前端项目一键免费部署到 Vercel，并绑定自定义域名。"
 date: "2026-04-08"
+tags: ["博客部署"]
 ---
 
 # 🚀 Vercel 零成本全自动部署教程

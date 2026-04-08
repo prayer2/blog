@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full max-w-7xl mx-auto py-8">
-    <div class="flex flex-col lg:flex-row gap-4 items-start">
-      <!-- 左侧卡片区域 -->
-      <aside class="w-full lg:w-64 flex-shrink-0">
+  <div class="w-full max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row gap-8 items-start">
+      <!-- 左侧卡片区域，添加 sticky 和 top-24 让它像分类卡片一样永远贴在顶部 -->
+      <aside class="w-full md:w-64 flex-shrink-0 sticky top-24">
         <SidebarProfile />
       </aside>
 

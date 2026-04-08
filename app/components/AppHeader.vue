@@ -1,31 +1,37 @@
 <template>
-  <header class="sticky top-0 z-50 w-full backdrop-blur-xl bg-white/60 dark:bg-gray-900/60 border-b border-white/40 dark:border-gray-800/60 transition-colors duration-300 shadow-[0_4px_30px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.2)]">
+  <header class="fixed top-0 left-0 right-0 w-full z-[100] backdrop-blur-xl bg-white/60 dark:bg-gray-900/60 border-b border-white/40 dark:border-gray-800/60 transition-colors duration-300 shadow-[0_4px_30px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.2)]">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center space-x-3 group">
-        <NuxtImg 
+        <!-- <NuxtImg 
           src="/images/blog/avatar.jpg" 
           alt="Mint的主理人头像" 
           class="w-9 h-9 rounded-full object-cover shadow-sm group-hover:scale-105 transition-transform duration-300"
-        />
-        <span class="text-xl font-bold text-gray-900 dark:text-white tracking-tight">Mint的博客</span>
+        /> -->
+        <span class="text-xl font-bold text-gray-900 dark:text-white tracking-tight">这里是Mint的博客❤</span>
       </NuxtLink>
 
       <!-- Navigation -->
       <nav class="flex items-center space-x-6 sm:space-x-8 text-sm font-medium">
         <NuxtLink to="/blog" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-          文章列表
+          博客
         </NuxtLink>
-        <a 
-          href="https://github.com/prayer2/blog" 
-          target="_blank"
-          class="hidden sm:inline-block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-        >
-          GitHub源码
-        </a>
-
-        <!-- Dark Mode Toggle Component -->
-        <button 
+        <NuxtLink to="/thoughts" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+          碎碎念
+        </NuxtLink>
+        <NuxtLink to="/categories" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+          分类
+        </NuxtLink>
+        <NuxtLink to="/collections" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+          收藏
+        </NuxtLink>
+        <NuxtLink to="/hobbies" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+          爱好
+        </NuxtLink>
+        <NuxtLink to="/about" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+          简介
+        </NuxtLink>
+         <button
           @click="toggleColorMode"
           class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
           aria-label="Toggle Dark Mode"

@@ -1,13 +1,12 @@
 <template>
   <div class="max-w-4xl mx-auto">
     <div class="mb-10 text-center md:text-left pl-2">
-      <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight mb-2">博客文章</h1>
-      <p class="text-gray-500 dark:text-gray-400 font-medium">记录技术、生活与灵感</p>
+      <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight mb-2">爱好集</h1>
+      <p class="text-gray-500 dark:text-gray-400 font-medium">记录那些让我闪光的热爱事物</p>
     </div>
 
-    <!-- 获取并遍历所有 /blog 下的文章，并按日期倒序排序（越新越靠前） -->
-    <!-- 由于文件放在了子文件夹里，path="/blog" 依然有效（默认深层抓取），此处加入 sort 参数 -->
-    <ContentList path="/blog" :query="{ sort: [{ date: -1 }] }" v-slot="{ list }">
+    <!-- 获取并遍历所有 /hobbies 下的文章 -->
+    <ContentList path="/hobbies" :query="{ sort: [{ date: -1 }] }" v-slot="{ list }">
       <div v-if="list?.length > 0" class="space-y-6">
         <article
           v-for="post in list"
@@ -15,8 +14,8 @@
           class="p-6 bg-white/60 dark:bg-gray-900/60 backdrop-blur-xl rounded-3xl shadow-sm border border-gray-100 dark:border-gray-800 hover:shadow-md transition duration-300 group block relative z-10"
         >
           <NuxtLink :to="post._path">
-            <h2 class="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-3 truncate group-hover:underline">
-              {{ post.title }}
+            <h2 class="text-2xl font-bold text-pink-600 dark:text-pink-400 mb-3 truncate group-hover:underline">
+              {{ post.title || '无标题' }}
             </h2>
             <p v-if="post.description" class="text-gray-600 dark:text-gray-300 mb-5 line-clamp-2 leading-relaxed">
               {{ post.description }}
@@ -31,18 +30,18 @@
                 </span>
                 <!-- 标签/分类展示 -->
                 <div v-if="post.tags?.length" class="flex gap-2">
-                  <span v-for="tag in post.tags" :key="tag" class="px-2 py-1 bg-blue-100/50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 rounded-md text-xs font-bold tracking-wide">
+                  <span v-for="tag in post.tags" :key="tag" class="px-2 py-1 bg-pink-100/50 text-pink-700 dark:bg-pink-900/30 dark:text-pink-300 rounded-md text-xs font-bold tracking-wide">
                     #{{ tag }}
                   </span>
                 </div>
               </div>
-              <span class="font-bold text-blue-500 dark:text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-4 group-hover:translate-x-0 duration-300 hidden sm:inline-block">继续阅读 &rarr;</span>
+              <span class="font-bold text-pink-500 dark:text-pink-400 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-4 group-hover:translate-x-0 duration-300 hidden sm:inline-block">探索发现 &rarr;</span>
             </div>
           </NuxtLink>
         </article>
       </div>
       <div v-else class="text-center py-20 bg-white/50 dark:bg-gray-900/50 backdrop-blur-xl border border-dashed border-gray-200 dark:border-gray-800 rounded-3xl text-gray-500">
-        暂时还没有文章发布哦 🥳
+        暂时还没有分享爱好哦 🎮
       </div>
     </ContentList>
   </div>
