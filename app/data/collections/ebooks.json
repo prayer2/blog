@@ -1,0 +1,26 @@
+[
+  {
+    "name": "You Don't Know JS (YDKJ)",
+    "url": "https://github.com/getify/You-Dont-Know-JS",
+    "tags": ["JavaScript", "book", "open-source"],
+    "description": "深入理解 JavaScript 的系列书籍（开源，线上可读）"
+  },
+  {
+    "name": "Eloquent JavaScript",
+    "url": "https://eloquentjavascript.net/",
+    "tags": ["JavaScript", "book", "learn"],
+    "description": "一本优秀的 JavaScript 入门与进阶书籍，在线免费阅读"
+  },
+  {
+    "name": "Designing Data-Intensive Applications",
+    "url": "https://dataintensive.net/",
+    "tags": ["architecture", "systems", "book"],
+    "description": "关于构建可靠、可扩展数据系统的现代参考书"
+  },
+  {
+    "name": "Practical Vim",
+    "url": "https://pragprog.com/titles/dnvim2/practical-vim/",
+    "tags": ["vim", "tooling"],
+    "description": "提高 Vim 使用效率的实用指南"
+  }
+]

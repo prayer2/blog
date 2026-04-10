@@ -1,0 +1,38 @@
+[
+  {
+    "name": "MDN Web Docs",
+    "url": "https://developer.mozilla.org/",
+    "tags": ["web", "docs", "reference"],
+    "description": "Web 文档与参考，前端开发必备"
+  },
+  {
+    "name": "Stack Overflow",
+    "url": "https://stackoverflow.com/",
+    "tags": ["qa", "community"],
+    "description": "开发者问答社区"
+  },
+  {
+    "name": "Dev.to",
+    "url": "https://dev.to/",
+    "tags": ["blog", "community"],
+    "description": "技术博客与社区文章"
+  },
+  {
+    "name": "Smashing Magazine",
+    "url": "https://www.smashingmagazine.com/",
+    "tags": ["design", "ux"],
+    "description": "前端和设计专题文章"
+  },
+  {
+    "name": "GitHub",
+    "url": "https://github.com/",
+    "tags": ["code", "hosting"],
+    "description": "代码托管与协作平台"
+  },
+  {
+    "name": "Can I use",
+    "url": "https://caniuse.com/",
+    "tags": ["compat", "browser"],
+    "description": "浏览器兼容性查询"
+  }
+]
