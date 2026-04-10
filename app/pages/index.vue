@@ -24,14 +24,15 @@
         </p>
       </div>
 
-      <div class="cute-wrap mx-auto" title="点一下小团子们">
+      <div class="cute-wrap mx-auto" title="把鼠标放到小团子上试试（或使用键盘聚焦）">
         <button
           v-for="(blob, index) in blobConfigs"
           :key="index"
           type="button"
           class="mini-blob"
           :class="[blob.tone, blob.size, blob.mood, { bouncing: bouncingBlobs.includes(index) }]"
-          @click="triggerBlobBounce(index)"
+          @mouseenter="triggerBlobBounce(index)"
+          @focus="triggerBlobBounce(index)"
         >
           <span class="face"></span>
         </button>
