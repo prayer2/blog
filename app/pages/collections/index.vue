@@ -245,7 +245,7 @@ onBeforeUnmount(() => {
   if (_observer) { _observer.disconnect(); _observer = null }
   window.removeEventListener('resize', _resizeHandler)
   window.removeEventListener('scroll', _scrollHandler)
-  if (_tocTimeout) clearTimeout(_tocTimeout)
+  // clear any timeouts used by UI components (handled inside components)
 })
 
 function computeCardPositions() {
